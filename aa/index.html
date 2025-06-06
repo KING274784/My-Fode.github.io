@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merci Mon Amie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Merci du fond du cœur 💖</h1>
+    <p class="message">
+      À toi, mon amie précieuse,<br />
+      Merci pour ta présence, ton soutien, ton rire et ta lumière. 🌟<br />
+      Tu rends chaque moment plus doux et chaque jour plus beau.
+    </p>
+
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="img/dd.jpg" alt="Souvenir 1" />
+        <div class="caption">La plus belle 🥰😘</div>
+      </div>
+      <div class="slide fade">
+        <img src="img/cc.jpg" alt="Souvenir 2" />
+        <div class="caption">La plus belle 🥰😘</div>
+      </div>
+      <div class="slide fade">
+        <img src="img/aa.jpg" alt="Souvenir 3" />
+        <div class="caption">La demoiselle en mode causerie 😏💫</div>
+      </div>
+      <div class="slide fade">
+        <img src="img/bb.jpg" alt="Souvenir 4" />
+        <div class="caption">La demoiselle en mode regard qui tue 🙃😉</div>
+      </div>
+      <div class="slide fade">
+        <img src="img/ee.jpg" alt="Souvenir 5" />
+        <div class="caption">En plein Conseil des Ministres 😊😁</div>
+      </div>
+      <div class="slide fade">
+        <img src="img/ff.jpg" alt="Souvenir 6" />
+        <div class="caption">Toujours souriante 🥰💕</div>
+      </div>
+      <a class="prev" onclick="changerSlide(-1)">❮</a>
+      <a class="next" onclick="changerSlide(1)">❯</a>
+    </div>
+
+    <button onclick="toggleMusique()" id="btnMusique">Pause musique 🎵</button>
+    <button onclick="afficherSurprise()">Clique ici</button>
+    <div class="coeurs" id="coeurs"></div>
+  </div>
+
+  <audio id="musiqueFond" autoplay loop>
+    <source src="audio/musique.mp3" type="audio/mp3" />
+    Votre navigateur ne supporte pas l’audio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
